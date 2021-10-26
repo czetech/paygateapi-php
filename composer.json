@@ -1,0 +1,33 @@
+{
+  "name": "czetech/paygateapi",
+  "description": "Library for connecting with Payment Gateway",
+  "authors": [
+    {
+      "name": "Petr Czepiec",
+      "email": "petr@czepiec.me"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "guzzlehttp/guzzle": "^7.2",
+    "jms/serializer": "^3.12"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpdocumentor/phpdocumentor": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PayGateApi\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PayGateApi\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit tests",
+    "docs": "phpdoc"
+  }
+}
